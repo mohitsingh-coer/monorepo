@@ -1,0 +1,77 @@
+[
+    {
+        "name": "example-root-project",
+        "isProjectJsonExists": false,
+        "isBuildGradleExists": true,
+        "isBuildGradleKtsExists": false,
+        "isSettingsGradleExists": true,
+        "isSettingsGradleKtsExists": false,
+        "isGradlePropertiesExists": true,
+        "projectDirPath": "/Users/mohit/nx-playground/org1",
+        "relativePath": ".",
+        "parentProjectName": "",
+        "dependencies": [
+            
+        ]
+    },
+    {
+        "name": "libs",
+        "isProjectJsonExists": false,
+        "isBuildGradleExists": false,
+        "isBuildGradleKtsExists": false,
+        "isSettingsGradleExists": false,
+        "isSettingsGradleKtsExists": false,
+        "isGradlePropertiesExists": false,
+        "projectDirPath": "/Users/mohit/nx-playground/org1/libs",
+        "relativePath": "libs",
+        "parentProjectName": "example-root-project",
+        "dependencies": [
+            
+        ]
+    },
+    {
+        "name": "mylib",
+        "isProjectJsonExists": true,
+        "isBuildGradleExists": true,
+        "isBuildGradleKtsExists": false,
+        "isSettingsGradleExists": false,
+        "isSettingsGradleKtsExists": false,
+        "isGradlePropertiesExists": false,
+        "projectDirPath": "/Users/mohit/nx-playground/org1/libs/mylib",
+        "relativePath": "libs/mylib",
+        "parentProjectName": "libs",
+        "dependencies": [
+            
+        ]
+    },
+    {
+        "name": "apps",
+        "isProjectJsonExists": false,
+        "isBuildGradleExists": false,
+        "isBuildGradleKtsExists": false,
+        "isSettingsGradleExists": false,
+        "isSettingsGradleKtsExists": false,
+        "isGradlePropertiesExists": false,
+        "projectDirPath": "/Users/mohit/nx-playground/org1/apps",
+        "relativePath": "apps",
+        "parentProjectName": "example-root-project",
+        "dependencies": [
+            
+        ]
+    },
+    {
+        "name": "app1",
+        "isProjectJsonExists": true,
+        "isBuildGradleExists": true,
+        "isBuildGradleKtsExists": false,
+        "isSettingsGradleExists": false,
+        "isSettingsGradleKtsExists": false,
+        "isGradlePropertiesExists": false,
+        "projectDirPath": "/Users/mohit/nx-playground/org1/apps/app1",
+        "relativePath": "apps/app1",
+        "parentProjectName": "apps",
+        "dependencies": [
+            
+        ]
+    }
+]
