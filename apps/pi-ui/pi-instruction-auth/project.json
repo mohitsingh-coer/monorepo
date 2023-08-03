@@ -1,0 +1,41 @@
+{
+  "name": "pi-instruction-auth",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/pi-ui/pi-instruction-auth/src",
+  "targets": {
+    "build": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "outputs": ["apps/pi-ui/pi-instruction-auth/build"],
+      "options": {
+        "task": "bootJar"
+      }
+    },
+    "build-image": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "options": {
+        "task": "bootBuildImage"
+      }
+    },
+    "serve": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "options": {
+        "task": "bootRun",
+        "keepItRunning": true
+      }
+    },
+    "lint": {
+      "executor": "@jnxplus/nx-gradle:lint",
+      "options": {
+        "linter": "checkstyle"
+      }
+    },
+    "test": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "options": {
+        "task": "test"
+      }
+    }
+  },
+  "tags": []
+}

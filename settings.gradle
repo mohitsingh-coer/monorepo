@@ -8,5 +8,7 @@ pluginManagement {
   }
 }
 rootProject.name = 'example-root-project'
+include('apps:pi-ui:pi-instruction-auth')
+include('apps:pi-ui:e2e-test-cases')
 include('libs:mylib')
 include('apps:app1')

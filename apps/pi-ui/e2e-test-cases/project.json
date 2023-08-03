@@ -1,0 +1,41 @@
+{
+  "name": "e2e-test-cases",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/pi-ui/e2e-test-cases/src",
+  "targets": {
+    "build": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "outputs": ["apps/pi-ui/e2e-test-cases/build"],
+      "options": {
+        "task": "bootJar"
+      }
+    },
+    "build-image": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "options": {
+        "task": "bootBuildImage"
+      }
+    },
+    "serve": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "options": {
+        "task": "bootRun",
+        "keepItRunning": true
+      }
+    },
+    "lint": {
+      "executor": "@jnxplus/nx-gradle:lint",
+      "options": {
+        "linter": "checkstyle"
+      }
+    },
+    "test": {
+      "executor": "@jnxplus/nx-gradle:run-task",
+      "options": {
+        "task": "test"
+      }
+    }
+  },
+  "tags": []
+}
